@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intimus Core</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+
+    <h2 class="logo">IC</h2>
+
+    <div class="menu-container">
+
+        <button class="menu-btn" onclick="toggleNavMenu()">
+            ☰ Menu
+        </button>
+
+        <div class="menu-dropdown" id="navMenu">
+
+            <a href="#poster">Poster</a>
+
+            <a href="#inspiration">Inspiration</a>
+
+            <a href="#content">Content</a>
+
+            <a href="#contact">Contact</a>
+
+        </div>
+
+    </div>
+
+    </nav>
+
+    <!-- POSTER -->
+    <section id="poster" class="section poster">
+    <div class="content">
+        <h1>Virtual Mentorship</h1>
+        <h2 class="highlight">Cohort 2</h2>
+
+        <img src="portfolio.jpeg" alt="Mentorship Poster">
+
+        <p class="tagline">
+            Real transformation starts when you understand yourself and take intentional steps forward.
+        </p>
+    </div>
+</section>
+
+    <!-- INSPIRATION -->
+    <section id="inspiration" class="section light">
+    <div class="content">
+        <h1>Inspiration</h1>
+
+        <p>
+            If you’ve been feeling unsure about your direction or wondering what your next step should be,
+            this mentorship is for you.
+        </p>
+
+        <p>
+            Together, we will help you understand who you truly are, clarify your vision,
+            and turn your ideas into a practical path you can follow with confidence.
+        </p>
+
+        <p>
+            You’ll learn how to think through challenges, make better decisions,
+            and align your career with your strengths and purpose.
+        </p>
+
+        <p class="emphasis">
+            This is more than just guidance—it’s a space for growth, clarity, and intentional living.
+        </p>
+
+        <p>
+            If you’re ready to take yourself seriously and move forward with purpose,
+            I invite you to reach out and begin this journey.
+        </p>
+
+    </div>
+</section>
+
+    <!-- COURSE CONTENT -->
+    <section id="content" class="section dark">
+        <div class="content">
+            <h1>Course Content</h1>
+            <p>
+                <ul>
+                    <li class="course">Self Awareness</li>
+						<ul>
+						SWOT ANALYSIS<br>
+						Strategies to handle weaknesses.<br>
+						Mastering your strengths.<br>
+						</ul><br>
+                    <li class="course">Vision Board Mapping</li>
+						<ul>
+						Locate your now<br>
+						Draw your future<br>
+						Incoporation of strengths in strategies. <br>
+						</ul><br>
+                    <li class="course">Problem Solving</li>
+						<ul>
+						What is problem solving<br>
+						Critical thinking <br>
+						Design thinking<br>
+						Steps to forming solutions.<br>
+						Leading change. <br>
+						</ul><br>
+                    <li class="course">Career Guidance</li>
+						<ul>
+						Choosing your career<br>
+						Seeing onself in the society <br>
+						Beyond course work.<br>
+						</ul>
+                </ul>
+            </p>
+        </div>
+    </section>
+ 
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+        <div class="content">
+            <h1>Contact Us</h1>
+		
+        <div class="fee-box">
+            <p>Registration Fee</p>
+            <h2>Ksh 300</h2>
+        </div>
+
+          <a href="mailto:intimuscore@gmail.com?subject=Mentorship Inquiry&body=Hello Intimus Core,
+          %0D%0A%0D%0AMy name is:%0D%0A%0D%0AI would like to join the Mentorship Program.%0D%0A"
+           target="_blank" class="gmail-btn">Email Us</a>
+			
+			<br>
+			
+		<a href="https://t.me/intimuscore" target="_blank" class="telegram-btn">Telegram</a>
+		
+		<br>
+
+		<!-- WhatsApp Button -->
+<button class="whatsapp-btn" onclick="openPopup()">
+        WhatsApp
+</button>
+
+<!-- Popup -->
+<div class="popup" id="popup">
+
+    <div class="popup-content">
+
+        <h2>Select an Option</h2>
+
+        <a href="https://wa.me/254757962414" target="_blank">
+            Sir Scarlet
+        </a>
+
+        <a href="https://wa.me/254797214566" target="_blank">
+            Sir Kibera
+        </a>
+
+        <a href="https://chat.whatsapp.com/EGhQovQqvnt5bdrIBXMwuY" target="_blank">
+            Join Intimus Core
+        </a>
+
+        <button class="close-btn" onclick="closePopup()">
+            Close
+        </button>
+
+    </div>
+
+</div>
+			
+        </div>
+    </section>
+
+<script>
+
+function openPopup() {
+    document.getElementById("popup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("popup").style.display = "none";
+}
+
+window.onclick = function(event) {
+
+    const popup = document.getElementById("popup");
+
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+}
+
+</script>
+
+<script>
+
+function toggleNavMenu() {
+
+    const menu = document.getElementById("navMenu");
+
+    if (menu.style.display === "block") {
+
+        menu.style.display = "none";
+
+    } else {
+
+        menu.style.display = "block";
+
+    }
+
+}
+
+</script>
+
+</body>
+</html>

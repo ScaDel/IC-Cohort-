@@ -1,0 +1,437 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* NAVBAR */
+nav {
+    position: fixed;
+    width: 100%;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    z-index: 1000;
+}
+
+/* NAVBAR */
+
+nav {
+
+    position: fixed;
+
+    top: 0;
+
+    width: 100%;
+
+    padding: 15px 30px;
+
+    background: black;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    z-index: 1000;
+
+}
+
+/* LOGO */
+
+.logo {
+
+    color: white;
+
+    font-size: 1.5rem;
+
+}
+
+/* MENU CONTAINER */
+
+.menu-container {
+
+    position: relative;
+
+}
+
+/* MENU BUTTON */
+
+.menu-btn {
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background: white;
+
+    color: black;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+}
+
+.menu-btn:hover {
+
+    transform: scale(1.05);
+
+}
+
+/* DROPDOWN */
+
+.menu-dropdown {
+
+    display: none;
+
+    position: absolute;
+
+    right: 0;
+
+    margin-top: 10px;
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    min-width: 180px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+
+}
+
+/* DROPDOWN LINKS */
+
+.menu-dropdown a {
+
+    display: block;
+
+    padding: 12px;
+
+    text-decoration: none;
+
+    color: black;
+
+    transition: 0.3s;
+
+}
+
+.menu-dropdown a:hover {
+
+    background: #f1f1f1;
+
+}
+
+.logo {
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+/* SECTIONS */
+.section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+/* CONTENT BOX */
+.content {
+    max-width: 800px;
+}
+
+/* POSTER SECTION */
+.poster {
+    background: black;
+    color: white;
+}
+
+.poster img {
+    width: 80%;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* LIGHT SECTION */
+.light {
+    background: #f4f4f4;
+    color: black;
+}
+
+/* DARK SECTION */
+.dark {
+    background: #222;
+    color: white;
+}
+
+/* CONTACT */
+.contact {
+    background: black;
+    color: white;
+}
+
+.highlight {
+    color: #00c853;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    margin-top: 20px;
+    font-size: 1.1rem;
+    opacity: 0.8;
+    color:#f305a4
+}
+
+.emphasis {
+    font-weight: bold;
+    color: #c2185b;
+    margin-top: 10px;
+}
+
+ul {
+    margin-top: 20px;
+    text-align: left;
+}
+
+li {
+    margin: 10px 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.course{
+	font-size: 20px
+}
+
+.fee-box {
+    margin: 20px auto;
+    padding: 20px;
+    width: 250px;
+    background: linear-gradient(135deg, #111, #222);
+    border: 2px solid #00c853;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+
+.fee-box p {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+.fee-box h2 {
+    color: #00c853;
+    margin: 10px 0;
+    font-size: 2rem;
+}
+
+.fee-box span {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.gmail-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #d93025;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    box-shadow: 0 4px 15px rgba(217, 48, 37, 0.4);
+}
+
+.gmail-btn:hover {
+    opacity: 0.85;
+}
+
+.telegram-btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #0088cc;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 136, 204, 0.4);
+}
+
+.telegram-btn:hover {
+    opacity: 0.85;
+    transform: scale(1.05);
+}
+
+.whatsapp-btn {
+
+    display: inline-block;
+
+    padding: 14px 32px;
+
+    background: linear-gradient(135deg, #25D366, #1ebe5d);
+
+    color: white;
+
+    border: none;
+
+    border-radius: 50px;
+
+    font-size: 1rem;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+
+}
+
+.whatsapp-btn:hover {
+
+    transform: translateY(-3px) scale(1.03);
+
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+
+}
+
+.whatsapp-btn:active {
+    transform: scale(0.98);
+}
+
+.gmail-btn,
+.telegram-btn,
+.whatsapp-btn {
+    width: 150px;
+    text-align: center;
+}
+
+/* POPUP BACKGROUND */
+.popup {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(5px);
+
+    justify-content: center;
+    align-items: center;
+
+    z-index: 1000;
+}
+
+/* POPUP BOX */
+.popup-content {
+    background: #c4ec9618;
+    padding: 25px;
+    border-radius: 15px;
+    width: 300px;
+    text-align: center;
+
+    animation: popupFade 0.3s ease;
+}
+
+/* TITLE */
+.popup-content h2 {
+    margin-bottom: 20px;
+}
+
+/* OPTIONS */
+.popup-content a {
+    display: block;
+    padding: 12px;
+    margin: 10px 0;
+
+    background: #f1f1f1;
+    border-radius: 10px;
+
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+.popup-content a:hover {
+    background: oklab(61.951% -0.14185 0.08335);
+    color: white;
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+
+    border: none;
+    border-radius: 20px;
+
+    background: rgb(214, 11, 52);
+    color: white;
+
+    font-size: 1.1rem;
+
+    cursor: pointer;
+}
+
+/* ANIMATION */
+@keyframes popupFade {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+.section {
+    min-height: 100vh;
+    padding: 100px 20px 60px;
+}
